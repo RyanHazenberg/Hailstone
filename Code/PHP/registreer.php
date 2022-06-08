@@ -14,7 +14,7 @@
 <div id="inlogblok">
     <form method="post" autocomplete="off" action="includes/registreer.inc.php">
 
-    <label class="labels" for="username">gebruikersnaam :</label>
+    <label class="labels" for="username">gebruikersnaam s:</label>
             <input type="text" name="username" placeholder="username"><br>
 
             <label class="labels" for="name">volledige naam :</label>
