@@ -35,19 +35,19 @@
     <?php 
      if(isset($_GET["error"])){
          if($_GET["error"] == "GeenInput"){
-             echo "<p>Vul alle velden in</p>";
+             echo "<p>Fill in all fiels!</p>";
          }
          else if($_GET["error"] == "verkeerdeEmail"){
-             echo "<p> onjuist gebruikers naam! </p>";
+             echo "<p> Incorrect username! </p>";
          }
          else if($_GET["error"] == "nietZelfdeWW"){
-            echo "<p> De wachtwoorden zijn niet hetzelfde </p>";
+            echo "<p> Passwords are not the same! please check for capitals </p>";
         }
         else if($_GET["error"] == "emailInGebruik"){
-            echo "<p> Deze Email is in gebruik! </p>";
+            echo "<p> This E-mail is already in use! </p>";
         }
         else if($_GET["error"] == "none"){
-            echo "<p> succesvol geregistreerd! </p>";
+            echo "<p> Registered succesfully! </p>";
         }
      }
     ?>

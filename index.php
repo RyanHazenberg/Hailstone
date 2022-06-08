@@ -123,9 +123,9 @@
 
         </div>
     </div>
-    <!-- <?php
-include_once ("Template_Footer.php")
-?> -->
+    <?php
+        include_once ("Template_Footer.php")
+    ?>
 </body>
 
 </html>
