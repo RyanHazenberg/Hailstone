@@ -4,65 +4,73 @@ html {
     color: white;
 }
 
-.container {  display: grid;
+.container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr 1fr 1fr;
     grid-template-rows: 0.4fr 0.6fr 0.5fr 1.2fr 2.3fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Header Header Header Header Header Header Header"
-      ". . . . . . ."
-      ". Title Title . . . ."
-      ". AboutText AboutText AboutText . RecommendedComp RecommendedComp"
-      ". . RecommendedPeople RecommendedPeople . RecommendedComp RecommendedComp"
-      "Footer Footer Footer Footer Footer Footer Footer";
-  }
-  
-  .Title { grid-area: Title; 
+        "Header Header Header Header Header Header Header"
+        ". . . . . . ."
+        ". Title Title . . . ."
+        ". AboutText AboutText AboutText . RecommendedComp RecommendedComp"
+        ". . RecommendedPeople RecommendedPeople . RecommendedComp RecommendedComp"
+        "Footer Footer Footer Footer Footer Footer Footer";
+}
+
+.Title {
+    grid-area: Title;
     font-size: xx-large;
 }
-  
-  .AboutText { grid-area: AboutText; 
+
+.AboutText {
+    grid-area: AboutText;
     font-size: x-large;
 }
-  
-  .Header { grid-area: Header; 
+
+.Header {
+    grid-area: Header;
 
 }
-  
-  .RecommendedComp { grid-area: RecommendedComp; 
+
+.RecommendedComp {
+    grid-area: RecommendedComp;
     background-color: #024959;
     border-radius: 15%;
 }
-  .Recommended {
+
+.RecContainer {
     background-color: #026773;
     border-radius: 15px;
     border-color: 1px solid black;
     margin: 20px;
     margin-top: 25px;
     min-height: 15%;
-    text-align:center;
-  }
+    text-align: center;
+}
 
-  .RecommendedPeople { grid-area: RecommendedPeople; 
+.RecommendedPeople {
+    grid-area: RecommendedPeople;
     background-color: #024959;
     border-radius: 15%;
 }
 
-  .RecName {
+.RecName {
     display: inline-flex;
     position: absolute;
     margin-top: .25%;
     margin-left: -8.4%;
 }
 
-  .RecEXP{
+.RecEXP {
     position: absolute;
     margin-top: 1.85%;
     margin-left: 6%;
-  }
+}
 
-  .Footer { grid-area: Footer; 
+.Footer {
+    grid-area: Footer;
 
 }
 
@@ -78,4 +86,22 @@ html {
     max-height: 75px;
     margin-top: 7.5px;
     margin-left: -350px;
+}
+
+.Profilepic {
+    max-height: 50px;
+    margin-top: 5px;
+    margin-left: -350px;
+}
+
+/*Text*/
+
+.Info {
+    margin-left: -175px;
+    margin-top: -87.5px;
+}
+
+.UserInfo {
+    margin-left: -175px;
+    margin-top: -75px;
 }
