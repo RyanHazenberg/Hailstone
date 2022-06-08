@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <!--
-    include_once ("Template_Header.php")
-    -->
+    <?php
+    include_once ("Template_Header.php");
+    ?>
     <div class="container">
         <div class="Title">
             <h1 id="Title">About us<img src="Media/Logo/Hailstone-logo.png" alt="Hailstone Logo" id="About-Logo"></h1>
@@ -124,7 +124,7 @@
         </div>
     </div>
     <?php
-        include_once ("Template_Footer.php")
+        include_once ("Template_Footer.php");
     ?>
 </body>
 
