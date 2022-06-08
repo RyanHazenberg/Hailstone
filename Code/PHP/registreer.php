@@ -14,11 +14,11 @@
 <div id="inlogblok">
     <form method="post" autocomplete="off" action="includes/registreer.inc.php">
 
-    <label class="labels" for="name">Voornaam:</label>
-            <input type="text" name="name" placeholder="Voornaam"><br>
+    <label class="labels" for="name">gebruikersnaam :</label>
+            <input type="text" name="username" placeholder="Voornaam"><br>
 
             <label class="labels" for="achterN">Achternaam:</label>
-            <input type="text" name="achterN" placeholder="Achternaam"><br>
+            <input type="text" name="achterN" placeholder="name"><br>
 
             <label class="labels" for="pwd">Wachtwoord:</label>
             <input type="password" name="pwd" placeholder="Wachtwoord"><br>
