@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="Code/CSS/Header.css">
 <header>
     <img src="/Media/Logo/Hailstone-Logo.png" alt="logo">
     <div id="header1">
