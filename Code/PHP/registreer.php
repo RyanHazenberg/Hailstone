@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>registreer</title>
     <link rel="stylesheet" href="style/regStyle.css">
 
 </head>
@@ -14,11 +14,11 @@
 <div id="inlogblok">
     <form method="post" autocomplete="off" action="includes/registreer.inc.php">
 
-    <label class="labels" for="name">gebruikersnaam :</label>
-            <input type="text" name="username" placeholder="Voornaam"><br>
+    <label class="labels" for="username">gebruikersnaam :</label>
+            <input type="text" name="username" placeholder="username"><br>
 
-            <label class="labels" for="achterN">Achternaam:</label>
-            <input type="text" name="achterN" placeholder="name"><br>
+            <label class="labels" for="name">volledige naam :</label>
+            <input type="text" name="name" placeholder="name"><br>
 
             <label class="labels" for="pwd">Wachtwoord:</label>
             <input type="password" name="pwd" placeholder="Wachtwoord"><br>
@@ -27,7 +27,7 @@
             <input type="password" name="pwdrepeat" placeholder="Herhaal wachtwoord"><br>
 
 
-            <button id="inlogKnop" name="submit" type="submit"><b>Registreren</b></button><br>
+            <button id="inlogKnop" name="submit" type="submit"><b>signup</b></button><br>
             <a href="login.php">Al een account? log hier in.</a>
 
 
