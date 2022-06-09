@@ -5,9 +5,15 @@ html {
 }
 
 #inlogblok {
-    
+    background-color: #024959;
+    border-radius: 25px;
 }
 
 input {
+    background-color: #024959;
+    border-radius: 25px;
+}
 
+form {
+    
 }
