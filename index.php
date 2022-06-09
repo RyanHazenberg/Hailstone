@@ -15,13 +15,13 @@
     <title>Home | Hailstone</title>
 </head>
 
-<body>
+<body class="color1">
     <?php
     include_once ("Template_Header.php");
     ?>
     <div class="container">
         <div class="Title">
-            <h1 id="Title">About us<img src="Media/Logo/Hailstone-logo.png" alt="Hailstone Logo" id="About-Logo"></h1>
+            <h1 id="Title">About us</h1>
         </div>
         <div class="AboutText">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum adipisci nulla quam blanditiis!

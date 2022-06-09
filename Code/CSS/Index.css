@@ -2,6 +2,7 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #262626;
     color: white;
+    overflow-y: hidden;
 }
 
 .container {
@@ -156,11 +157,6 @@ header {
     background-color: none;
 }
 
-img {
- 
-
-}
-
 .meme {
     padding-left: 30px;
 }
@@ -179,6 +175,12 @@ footer {
 img {
     display: flex;
     height: 50px;
-    margin-left: 93%;
-    margin-top: -55px;
+    margin-left: 95%;
+    margin-top: -40px;
 }
+
+.color1 {
+    background-color: #262626;
+    color: white;
+}
+
