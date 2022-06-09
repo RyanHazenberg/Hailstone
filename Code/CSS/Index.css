@@ -84,26 +84,27 @@ html {
 
 .CompanyLogo {
     max-height: 75px;
-    margin-top: 7.5px;
-    margin-left: -350px;
+    margin-top: -5.5px;
+    margin-left: 0px;
 }
 
 .Profilepic {
     max-height: 50px;
     margin-top: 5px;
-    margin-left: -350px;
+    margin-left: 0px;
 }
 
 /*Text*/
 
 .Info {
-    margin-left: -175px;
-    margin-top: -87.5px;
+    margin-left: 50px;
+    margin-top: -45px;
+    position: absolute;
 }
 
 .UserInfo {
     margin-left: -175px;
-    margin-top: -75px;
+    margin-top: -55px;
 }
 
 
@@ -156,8 +157,7 @@ header {
 }
 
 img {
-    display: flex;
-    height: 50px;
+ 
 
 }
 

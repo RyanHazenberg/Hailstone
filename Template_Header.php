@@ -12,11 +12,6 @@
       <a class="button Hbutton" href="#" role="button">Profile</a>
       <a class="button Hbutton meme" href="#" role="button">Login</a>
     </div>
-<<<<<<< HEAD
-=======
-  </header>
->>>>>>> 09643b4ef0b7e5eabc057be9d8908a72114e82ff
-
   </header>
 </body>
 </html>
