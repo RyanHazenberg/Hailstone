@@ -45,7 +45,7 @@ header {
     background-color: none;
 }
 
-img {
+.imgheader {
     display: flex;
     height: 50px;
 
