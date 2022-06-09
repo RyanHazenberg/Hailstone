@@ -7,8 +7,6 @@
     <title>personprofile</title>
 </head>
 <body>
-    <?php 
-    include_once("Template_Header.html");
-    ?>
+
 </body>
 </html>
