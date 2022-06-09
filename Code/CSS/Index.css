@@ -19,10 +19,6 @@ html {
         "Footer Footer Footer Footer Footer Footer Footer";
 }
 
-body {
-    background-color: #262626;
-}
-
 .Title {
     grid-area: Title;
     font-size: xx-large;
@@ -159,7 +155,7 @@ header {
     background-color: none;
 }
 
-.imgheader {
+img {
     display: flex;
     height: 50px;
 
