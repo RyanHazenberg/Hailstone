@@ -11,9 +11,9 @@
 </head>
 
 <body>
-<?php
+<!-- <?php
     include_once ("Template_Header.php");
-?>
+?> -->
     <div id="inlogblok">
         <form method="post" autocomplete="off" action="includes/registreer.inc.php">
             <div id="Freelance-options">
@@ -26,7 +26,7 @@
                 <div id="Freelance">
                     <br>
                     <input type="radio" name="typeofuser" value="Freelancer">
-                    <label for="Company">Company</label>
+                    <label for="Freelancer">Freelancer</label>
                 </div>
             </div>
         </hr>
@@ -34,7 +34,7 @@
                 <div id="Company">
                     <br>
                     <input type="radio" name="typeofuser" value="Company">
-                    <label for="Freelancer">Freelancer</label>
+                    <label for="Company">Company</label>
                 </div>
                 <input type="text" name="Companyname" placeholder="Companyname...">
                 <input type="text" name="Zip-code" placeholder="2837AB..." maxlength="6">
@@ -48,7 +48,7 @@
 
 
         </form>
-        <?php 
+        <!-- <?php 
      if(isset($_GET["error"])){
          if($_GET["error"] == "GeenInput"){
              echo "<p>Please fill in all fields!</p>";
@@ -66,11 +66,11 @@
             echo "<p> Registered succesfully! </p>";
         }
      }
-    ?>
+    ?> -->
     </div>
-<?php
+<!-- <?php
     include_once ("Template_Header.php");
-?>
+?> -->
 </body>
 
 </html>
