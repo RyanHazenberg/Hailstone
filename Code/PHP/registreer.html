@@ -11,6 +11,9 @@
 </head>
 
 <body>
+<?php
+    include_once ("Template_Header.php");
+?>
     <div id="inlogblok">
         <form method="post" autocomplete="off" action="includes/registreer.inc.php">
             <div id="Freelance-options">
@@ -33,9 +36,14 @@
                     <input type="radio" name="typeofuser" value="Company">
                     <label for="Freelancer">Freelancer</label>
                 </div>
-                <input type="text" name="name" placeholder="Examplename...">
+                <input type="text" name="Companyname" placeholder="Companyname...">
+                <input type="text" name="Zip-code" placeholder="2837AB..." maxlength="6">
+                <input type="text" name="Adress" placeholder="1 Willow lane...">
+                <input type="text" name="Province/state" placeholder="South-holland/Georgie...">
+                <button id="Register" name="submit" type="submit"><b>Register</b></button>
+                <button id="Log-in" name="submit"><b>Login</b></button>
             </div>
-            <!-- <button id="inlogKnop" name="submit" type="submit"><b>Registreren</b></button><br> -->
+
             <span>already got an account? Log-in <a href="login.php">here!</a></span>
 
 
@@ -60,7 +68,9 @@
      }
     ?>
     </div>
-
+<?php
+    include_once ("Template_Header.php");
+?>
 </body>
 
 </html>
