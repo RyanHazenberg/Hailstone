@@ -19,6 +19,10 @@ html {
         "Footer Footer Footer Footer Footer Footer Footer";
 }
 
+body {
+    background-color: #262626;
+}
+
 .Title {
     grid-area: Title;
     font-size: xx-large;
