@@ -94,13 +94,12 @@ function createUser($conn, $username, $name,$pwd) {
         else if ($checkPwd === true) {
 
             session_start();
-            // $_SESSION["docentId"] = $usernameExists["docentId"];
-            // $_SESSION["docentUid"] = $usernameExists["docentUid"];
-            // $_SESSION["docentOrganisatie"] = $usernameExists["docentOrganisatie"];
-            // $_SESSION["docentEmail"] = $usernameExists["docentEmail"];
+            $_SESSION["id"] = $usernameExists["id"];
+            $_SESSION["username"] = $usernameExists["username"];
+            $_SESSION["name"] = $usernameExists["name"];
 
 
-            header("location: ../index.php");
+            header("location: ../userHome.php");
             exit();
 
         }

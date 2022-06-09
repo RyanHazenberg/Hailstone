@@ -1,6 +1,6 @@
 <?php 
 function logout(){
-    include_once 'session.php';
+    include_once '../session.php';
 
     if(isset($_SESSION["username"])) {
         session_start();

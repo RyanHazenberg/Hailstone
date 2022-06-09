@@ -26,5 +26,9 @@
         <button type="submit">logout</button>
     </form>
 
+        <a href="bedrijfDashboard.php">
+            <button>bedrijfDashboard</button>
+        </a>
+
 </body>
 </html>
