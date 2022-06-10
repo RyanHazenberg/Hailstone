@@ -1,0 +1,17 @@
+.profileButton{
+    background-color: #024959;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.profileButton:hover {
+    background-color: #024959;
+}
+
+.profileButton:focus {
+    background-color: none;
+}
