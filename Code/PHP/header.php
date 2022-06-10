@@ -19,7 +19,6 @@
     <div id="header1">
       <a class="button Hbutton" href="#" role="button">Home</a>
       <a class="button Hbutton" href="#" role="button">Dashboard</a>
-      <a class="button Hbutton" href="#" role="button">About me</a>
     </div>
     <div id="header2">
       <a class="button Hbutton" href="#" role="button">Profile</a>
