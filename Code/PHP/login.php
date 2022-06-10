@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=0;" />
-    <title>Inloggen - Docent</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <title>Login | Hailstone</title>
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 
 <body>
@@ -17,15 +17,14 @@
                 <form method="post" autocomplete="off" action="includes/login.inc.php">
                     <div id="Container">
                         <h1>Login</h1>
-                        <input type="text" name="username" placeholder="Username..." required id="Username"><br>
-                        <input type="password" name="pwd" placeholder="Password..." required id="Password">
-
-                        <p>Don't have a account? Don't worry click <a href="registreer.php" class="here">here!</a></p>
+                        <input type="text" name="username" placeholder="Username..." required id="Username">
+                        <input type="password" name="pwd" placeholder="Password..." required id="Password"><br>
+                        <div style="height:10px; width: 10rem; background-color: black; margin-top: .5em;"></div>
                         <img src="../../Media/Logo/Hailstone-Logo.png" alt="Hailstone-Logo" id="Form-logo">
-                    </div>
-
-                    <div id="kInlogDiv">
-                        <button id="inlogKnop" name="submit">Log in</button>
+                        <div id="kInlogDiv" style="margin-top: 10rem;">
+                            <button id="Confirm" name="submit">Confirm</button>
+                            <button id="Sign-up" name="submit">Sign-up</button>
+                        </div>
                     </div>
                 </form>
             </div>
