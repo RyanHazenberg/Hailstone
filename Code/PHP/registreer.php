@@ -11,9 +11,6 @@
 </head>
 
 <body>
-<!-- <?php
-    include_once ("Template_Header.php");
-?> -->
 
 <div class="container">
     <div class="Header"></div>
@@ -42,7 +39,7 @@
                     <input type="text" name="Zip-code" placeholder="2837AB..." maxlength="6" id="Zip"><br>
                     <input type="text" name="Adress" placeholder="1 Willow lane..." id="Adress">
                     <input type="text" name="Province/state" placeholder="South-holland/Georgia..." id="Location">
-                    <input type="file" name="Companylogo" required id="Companylogo"><br>
+                    <input type="file" name="Companylogo"  id="Companylogo">
                     <button id="Register" name="submit" type="submit"><b>Register</b></button>
                     <button id="Log-in" name="submit"><b>Login</b></button>
     
@@ -53,7 +50,7 @@
             </form>
     </div>
   </div>
-        <!-- <?php 
+         <?php 
      if(isset($_GET["error"])){
          if($_GET["error"] == "GeenInput"){
              echo "<p>Please fill in all fields!</p>";
@@ -71,11 +68,8 @@
             echo "<p> Registered succesfully! </p>";
         }
      }
-    ?> -->
+    ?>
     </div>
-<!-- <?php
-    include_once ("Template_Header.php");
-?> -->
 </body>
 
 </html>
