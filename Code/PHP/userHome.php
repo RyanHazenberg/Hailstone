@@ -19,7 +19,7 @@
     ?>
     <p>gebruikersnaam : <?=$_SESSION["username"]?></p>
     <p>naam : <?=$_SESSION["name"]?></p>
-
+    <p>accounttype : <?=$_SESSION["type"]?></p>
 
     <form action="includes/logout.inc.php">
 

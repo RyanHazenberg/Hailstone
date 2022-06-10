@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
-    $( "#personRadio" ).on( "click", appendCompany);
-    $( "#companyRadio" ).on( "click", appendPerson);
+    $( "#personRadio" ).on( "click", appendPerson);
+    $( "#companyRadio" ).on( "click", appendCompany);
 });
 
 
@@ -11,14 +11,14 @@ function appendCompany(){
     $(".inputs").append(
         '<input type="text" hidden name="companyForm" >'+
 
+        '<input type="text" name="name" placeholder="fullname.."  id="name"><br>'+
         '<input type="text" name="username" placeholder="Username..."  id="Username"><br>'+
+        '<input type="password" name="pwd" placeholder="password..."  id="Passwords"><br> '+
         '<input type="password" name="pwdrepeat" placeholder="Repeat password..."  id="Repeat"><br> '+
+        
+
         '<input type="email" name="email" placeholder="Johndoe@example.com..."  id="Mail">'+
-        '<input type="number" name="phone" placeholder="+31 1234-56-78..." minlength="11" maxlength="15"  id="Phone">'+
-        '<input type="text" class="company" name="Companyname" placeholder="Companyname..." id="CompanyName">'+
-        '<input type="text" class="company" name="Zip-code" placeholder="2837AB..." maxlength="6" id="Zip"><br>'+
-        '<input type="text" class="company" name="Adress" placeholder="1 Willow lane..." id="Adress">'+
-        '<input type="text" class="company" name="Province/state" placeholder="South-holland/Georgia..." id="Location">'
+        '<input type="number" name="phone" placeholder="+31 1234-56-78..." minlength="11" maxlength="15"  id="Phone">'
 
         
     )
@@ -30,8 +30,12 @@ function appendPerson(){
     $(".inputs").append(
         '<input type="text" hidden name="personForm" >'+
 
+        '<input type="text" name="name" placeholder="fullname.."  id="name"><br>'+
         '<input type="text" name="username" placeholder="Username..."  id="Username"><br>'+
+        '<input type="password" name="pwd" placeholder="password..."  id="Passwords"><br> '+
         '<input type="password" name="pwdrepeat" placeholder="Repeat password..."  id="Repeat"><br> '+
+        
+
         '<input type="email" name="email" placeholder="Johndoe@example.com..."  id="Mail">'+
         '<input type="number" name="phone" placeholder="+31 1234-56-78..." minlength="11" maxlength="15"  id="Phone">'
     )

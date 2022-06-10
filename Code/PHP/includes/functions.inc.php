@@ -2,6 +2,23 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+
+function guidv4($data)
+{
+    assert(strlen($data) == 16);
+
+    $data[6] = chr(ord($data[6]) & 0x0f | 0x40); // set version to 0100
+    $data[8] = chr(ord($data[8]) & 0x3f | 0x80); // set bits 6-7 to 10
+
+    return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
+}
+
+
+
+
+
+
 function emptyInputSignup($username,$pwd,$pwdRepeat) {
     $result;
     if(empty($username)|| empty($pwd) || empty($pwdRepeat)){
@@ -57,25 +74,55 @@ function emptyInputLogin($username,$pwd) {
     return $result;
 }
 
-function createUser($conn, $username, $name,$pwd) {
-    $sql = "INSERT INTO users (username, name, pwd) VALUES (?, ?, ?)";
-    $stmt = mysqli_stmt_init($conn);
-        if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("location: ../registreer.php?error=stmtKAPUT2");
-            exit();
-        }
+function createUser($conn, $username, $name,$pwd, $type, $phone, $email) {
 
+
+    $UUID = guidv4(openssl_random_pseudo_bytes(16));
     $hashedPwd = password_hash($pwd, PASSWORD_BCRYPT);
-
-    mysqli_stmt_bind_param($stmt, "sss", $username, $name, $hashedPwd);
-    mysqli_stmt_execute($stmt);
     
-    mysqli_stmt_close($stmt);
-    header("location: ../registreer.php?error=$hashedPwd");
-    exit();
+
+
+
+
+
+
+    $sql = "INSERT INTO users (username, name, phone, email, pwd, type, userUUID) VALUES ('$username', '$name','$phone','$email','$hashedPwd','$type', '$UUID')";
+
+if (mysqli_query($conn, $sql)) {
+    header("location: ../registreer.php?error=succes");
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+  
+  mysqli_close($conn);
+
+
+
+
+
+
+
 
     }
 
+    function createCompany($conn, $username, $name,$pwd) {
+        $sql = "INSERT INTO users (username, name, pwd) VALUES (?, ?, ?)";
+        $stmt = mysqli_stmt_init($conn);
+            if(!mysqli_stmt_prepare($stmt, $sql)){
+                header("location: ../registreer.php?error=stmtKAPUT2");
+                exit();
+            }
+    
+        $hashedPwd = password_hash($pwd, PASSWORD_BCRYPT);
+    
+        mysqli_stmt_bind_param($stmt, "sss", $username, $name, $hashedPwd);
+        mysqli_stmt_execute($stmt);
+        
+        mysqli_stmt_close($stmt);
+        header("location: ../registreer.php?error=$hashedPwd");
+        exit();
+    
+    }
 
     function loginUser($conn,$username,$pwd) {
         $usernameExists = usernameExists($conn,$username);
@@ -96,7 +143,7 @@ function createUser($conn, $username, $name,$pwd) {
             session_start();
             $_SESSION["id"] = $usernameExists["id"];
             $_SESSION["username"] = $usernameExists["username"];
-            $_SESSION["name"] = $usernameExists["name"];
+            $_SESSION["type"] = $usernameExists["type"];
 
 
             header("location: ../userHome.php");

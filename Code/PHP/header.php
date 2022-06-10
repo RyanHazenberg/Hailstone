@@ -18,7 +18,17 @@
     <img src="../../Media/Logo/Hailstone-Logo.png" class="imgheader" alt="logo">
     <div id="header1">
       <a class="button Hbutton" href="#" role="button">Home</a>
-      <a class="button Hbutton" href="#" role="button">Dashboard</a>
+      <?php 
+      if($_SESSION["type"] == "persoon"){
+        $url = 'persoonDashboard.php';
+
+      }elseif($_SESSION["type"] == "company"){
+        $url = 'bedrijfDashboard.php';
+
+      }
+
+      ?>
+      <a class="button Hbutton" href="<?=$url?>" role="button">Dashboard</a>
       <a class="button Hbutton" href="#" role="button">About me</a>
     </div>
     <div id="header2">
