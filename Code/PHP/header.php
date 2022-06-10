@@ -17,7 +17,7 @@
   <header>
     <img src="../../Media/Logo/Hailstone-Logo.png" class="imgheader" alt="logo">
     <div id="header1">
-      <a class="button Hbutton" href="#" role="button">Home</a>
+      <a class="button Hbutton" href="userHome.php" role="button">Home</a>
       <?php 
       if($_SESSION["type"] == "persoon"){
         $url = 'persoonDashboard.php';
@@ -31,9 +31,12 @@
       <a class="button Hbutton" href="<?=$url?>" role="button">Dashboard</a>
       <a class="button Hbutton" href="#" role="button">About me</a>
     </div>
+
     <div id="header2">
       <a class="button Hbutton" href="#" role="button">Profile</a>
-      <a class="button Hbutton mememe" href="#" role="button">Log out</a>
+      <form class="mememe vorm" action="includes/logout.inc.php">
+      <a class="button Hbutton mememe" onclick="this.closest('form').submit(); return false;" href="#" role="button">Log out</a>
+    </form>
     </div>
 
   </header>

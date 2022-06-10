@@ -21,16 +21,6 @@ html {
         "Footer Footer Footer Footer Footer Footer Footer";
 }
 
-.Header {
-    grid-area: Header;
-
-}
-
-.Footer {
-    grid-area: Footer;
-
-}
-
 .Sign-up {
     grid-area: Sign-up;
     background-color: #024959;

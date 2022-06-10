@@ -8,8 +8,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Code/CSS/index.css">
-    <link rel="stylesheet" href="Code/CSS/header.css">
+    <link rel="stylesheet" href="../css/Index.css">
 
     <link rel="icon" type="image/x-icon" href="Media/Logo/favicon.ico">
     <title>Home | Hailstone</title>
