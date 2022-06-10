@@ -1,0 +1,14 @@
+body{
+    background-color: #262626;
+    height:100vh;
+    width: 100vw;
+}
+
+
+#h1{
+    color: #026773;
+}
+
+.col-6{
+    margin-top: 20px;
+}
