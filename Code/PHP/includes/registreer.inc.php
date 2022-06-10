@@ -12,7 +12,7 @@ if(isset($_POST["submit"])){
     $pwdRepeat = $_POST["pwdrepeat"];
 
     echo $username;
-    require_once '../../../dbh.inc.php';
+    require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
 
     if (emptyInputSignup($username,$pwd,$pwdRepeat) !== false) {

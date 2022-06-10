@@ -38,19 +38,19 @@ header {
 }
 
 .Hbutton:hover {
-    background-color: #3ca6a6;
+    background-color: #024959;
+    color: #3ca6a6;
 }
 
 .Hbutton:focus {
-   background-color: none;
+    background-color: none;
 }
 
-.imgheader {
-    display: flex;
-    height: 50px;
-
+.imgheader{
+    max-height: 40px;
+    max-width: 40px;
 }
 
-.meme {
-    padding-left: 30px;
+.mememe{
+padding-left: 5%;
 }
