@@ -141,8 +141,10 @@ if (mysqli_query($conn, $sql)) {
         else if ($checkPwd === true) {
 
             session_start();
-            $_SESSION["id"] = $usernameExists["id"];
+            $_SESSION["UUID"] = $usernameExists["userUUID"];
             $_SESSION["username"] = $usernameExists["username"];
+            $_SESSION["name"] = $usernameExists["name"];
+
             $_SESSION["type"] = $usernameExists["type"];
 
 

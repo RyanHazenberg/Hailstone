@@ -15,29 +15,15 @@
 </head>
 <body style="padding:10px">
     
-    <h1>maak een vacature</h1>
-    <form id="makeVacature" method="post" action="api_backend/maakVac_Be.php">
-        <input placeholder="Titel" name="title" id="title" type="text">
-        <textarea placeholder="beschrijving" id="beschrijving" name="beschrijving" type="textarea"></textarea>
 
-        <!-- <h2>eisen</h2> -->
-
-        <div id="eisen">
-        </div>
-        <!-- <button id="eisToevoeg">Eis toevoegen</button> -->
-        
-        
-        <button id="createVacButt">Create</button>
-    </form>
-
-    <h2>Jouw openstaande vacatures : </h2>
+    <h2>solicitanten : </h2>
     <table class="table">
     <thead>
         <tr>
         
-        <th scope="col">Titel</th>
-        <th scope="col">beschrijving</th>
-        <th scope="col">aantal solicitanten</th>
+        <th scope="col">name</th>
+        <th scope="col">phone</th>
+        <th scope="col">email</th>
 
         </tr>
     </thead>
@@ -47,30 +33,31 @@
 
     // header('Content-Type: text/html; charset=utf-8');
 
-
+    $id = $_GET['id'];
     $bedrijf = $_SESSION["name"];
-    echo $bedrijf;
-    $sql = "SELECT * FROM vacature WHERE bedrijf = '$bedrijf' ";
+    echo $id;
+    $sql = "SELECT * FROM solicitaties WHERE vacUUID = '$id' ";
 
     $result = $conn->query($sql);
     while ($row = $result->fetch_assoc()) {
-        $selector = $row['vacUUID'];
-        $queryTijden = "SELECT COUNT(vacUUID) as poep FROM solicitaties WHERE vacUUID = '$selector' ";
-        $result2 = mysqli_query($conn, $queryTijden);
-        $row2 = mysqli_fetch_assoc($result2);
-        $aantalStu = $row2['poep'];
-        echo $aantalStu;
+        $userID = $row['userUUID'];
+        $sql = "SELECT * FROM users WHERE userUUID = '$userID' ";
+
+        $result = $conn->query($sql);
+        while ($row = $result->fetch_assoc()) {
  ?>
 
         <tr>
 
-        <td><?=$row['vacatureTitel']?></td>
-        <td><?=$row['vacatureOmschrijving']?></td>
-        <td><a href="solicitanten.php?id=<?=$row['vacUUID']?>"><?=$aantalStu?></a></td>
+        <td><?=$row['name']?></td>
+        <td><?=$row['phone']?></td>
+        <td><?=$row['email']?></td>
 
     </tr>
 
 <?php
+        }
+
     }
 
 ?>

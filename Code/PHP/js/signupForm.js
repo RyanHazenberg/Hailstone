@@ -11,7 +11,7 @@ function appendCompany(){
     $(".inputs").append(
         '<input type="text" hidden name="companyForm" >'+
 
-        '<input type="text" name="name" placeholder="fullname.."  id="name">'+
+        '<input type="text" name="name" placeholder="company name.."  id="name"><br>'+
         '<input type="text" name="username" placeholder="Username..."  id="Username"><br>'+
         '<input type="password" name="pwd" placeholder="password..."  id="Passwords"> '+
         '<input type="password" name="pwdrepeat" placeholder="Repeat password..."  id="Repeat"><br> '+
