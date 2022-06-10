@@ -1,20 +1,21 @@
-body{
+body {
     background-color: #262626;
 }
 
-#inner{
+#inner {
     height: 100%;
 }
-#profileButtonDiv{
+
+#profileButtonDiv {
     width: 60%;
     height: 100%;
     gap: 5%;
     display: flex;
     flex-direction: column;
-    margin-inline:auto;
+    margin-inline: auto;
 }
 
-.profileButton{
+.profileButton {
     background-color: #024959;
     border: none;
     transition: 0.5s;
@@ -34,20 +35,30 @@ body{
 }
 
 .profileButton:focus {
-    background-color: none;
+    background-color: #3ca6a6;
 }
 
-#placeholder{
+#placeholder {
     text-align: center;
 }
 
-h2{
+.h2 {
     color: white;
 }
-p{
+
+p {
     color: white;
 }
-.card-body{
-    background-color:#3ca6a6;
+
+.card-body {
+    background-color: #3ca6a6;
     outline: none;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.color1 {
+    background-color: #262626;
 }

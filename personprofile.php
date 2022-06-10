@@ -12,8 +12,8 @@
     <link href="profile.css" rel="stylesheet">
 </head>
 
-<body>
-    <?php
+<body class="color1">
+    <?php 
     include_once("Template_Header.php");
     ?>
     <div class="container">
@@ -65,9 +65,6 @@
 
             </div>
         </div>
-
-
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

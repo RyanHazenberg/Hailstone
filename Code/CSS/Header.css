@@ -38,11 +38,11 @@ header {
 }
 
 .Hbutton:hover {
-    background-color: #024959;
+    background-color: #3ca6a6;
 }
 
 .Hbutton:focus {
-    background-color: none;
+   background-color: #3ca6a6;
 }
 
 .imgheader {
