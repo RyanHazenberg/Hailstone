@@ -24,9 +24,8 @@
     ?>
     <div class="container">
         <div class="row mt-3 mb-3">
-            <h1 id="h1">Welcome <?=$_SESSION["username"]?>!</h1>
+            <h1 id="h1">Welcome <span id="late"><?=$_SESSION["username"]?></span></h1>
         </div>
-
         <div class="row mt-5">
             <div class="col-6">
                 <div class="card">
