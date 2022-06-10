@@ -45,5 +45,22 @@ input {
     margin-top: -3.5%;
 }
 #Name {
-    width: 75px;
+    margin-right: 14px;
+    margin-bottom: 21px;
+    width: 81px;
+}
+#Username {
+
+}
+#Passwords {
+
+}
+#Repeat {
+
+}
+#Mail {
+
+}
+#Phone {
+
 }

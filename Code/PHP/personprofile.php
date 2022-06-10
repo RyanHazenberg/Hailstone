@@ -14,7 +14,7 @@
 
 <body class="color1">
     <?php 
-    include_once("Template_Header.php");
+    include_once("header.php");
     ?>
     <div class="container">
         <div class="row" id="inner">

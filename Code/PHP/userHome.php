@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user.css">
     <title>Home | Hailstone</title>
-
     <?php
         require_once '../../dbh.inc.php';
             require_once 'session.php';
@@ -15,20 +16,31 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
-<body>
+
+<body style="background-color: #262626">
 
     <?php
     include_once("header.php");
     ?>
+    <div class="container">
+        <div class="row mt-3 mb-3">
+            <h1 id="h1">Welcome <?=$_SESSION["username"]?>!</h1>
+        </div>
 
-    <h1>ingelogd</h1>
+        <div class="row mt-5">
+            <div class="col-6">
+                <div class="card">
+                    col1
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    col2
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <?php
-    
-    ?>
-    <p>gebruikersnaam : <?=$_SESSION["username"]?></p>
-    <p>naam : <?=$_SESSION["name"]?></p>
-    <p>accounttype : <?=$_SESSION["type"]?></p>
 
 
 <table class="table">
@@ -80,4 +92,5 @@
 </table>
 
 </body>
+
 </html>

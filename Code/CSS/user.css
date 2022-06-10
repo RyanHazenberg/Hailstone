@@ -1,0 +1,22 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#h1 {
+    color: #3ca6a6;
+}
+
+.card{
+    border: 2px solid lightgreen;
+    width: 400px;
+    min-height: 400px;
+    border-radius: 30px;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: center;
+    width:100%;
+    gap:10px;
+}
+
+    
