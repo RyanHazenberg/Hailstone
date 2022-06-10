@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=0;" />
     <title>Login | Hailstone</title>
-    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
