@@ -15,7 +15,7 @@
         <div class="Footer"></div>
         <div class="Sign-up">
             <div id="inlogblok">
-                <form method="post" autocomplete="off" action="includes/registreer.inc.php">
+                <form method="post" autocomplete="off" action="includes/login.inc.php">
                     <div id="Container">
                         <h1>Login</h1>
                         <input type="text" name="username" placeholder="Username..." required id="Username"><br>
