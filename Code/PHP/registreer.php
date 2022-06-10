@@ -12,9 +12,6 @@
 </head>
 
 <body>
-<!-- <?php
-    include_once ("Template_Header.php");
-?> -->
 
 <div class="container">
     <div class="Header"></div>
@@ -48,7 +45,7 @@
             </form>
     </div>
   </div>
-        <!-- <?php 
+         <?php 
      if(isset($_GET["error"])){
          if($_GET["error"] == "GeenInput"){
              echo "<p>Please fill in all fields!</p>";
@@ -66,11 +63,8 @@
             echo "<p> Registered succesfully! </p>";
         }
      }
-    ?> -->
+    ?>
     </div>
-<!-- <?php
-    include_once ("Template_Header.php");
-?> -->
 </body>
 <script src="js/signupForm.js"></script>
 </html>

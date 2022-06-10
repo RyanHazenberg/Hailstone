@@ -4,29 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="user-scalable=0;"/>
+    <meta name="viewport" content="user-scalable=0;" />
     <title>Inloggen - Docent</title>
-    <link rel="stylesheet" href="../style/logStyle.css">
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="Header"></div>
+        <div class="Footer"></div>
+        <div class="Sign-up">
+            <div id="inlogblok">
+                <form method="post" autocomplete="off" action="includes/registreer.inc.php">
+                    <div id="Container">
+                        <h1>Login</h1>
+                        <input type="text" name="username" placeholder="Username..." required id="Username"><br>
+                        <input type="password" name="pwd" placeholder="Password..." required id="Password">
 
-    <div id="container">
-        <form id="loginForm" autocomplete="off" action="includes/login.inc.php" method="post">
-            <div id="iContainer">
-                <div id="loginBlok">
-                    <div id="inputFields">
-                        <input id="nameInput" type="text" name="username" placeholder="Gebruikersnaam" required>
-                        <input id="passInput" type="password" name="pwd" placeholder="Wachtwoord" required>
+                        <p>Don't have a account? Don't worry click <a href="registreer.php">here!</a></p>
+                        <img src="../../Media/Logo/Hailstone-Logo.png" alt="Hailstone-Logo" id="Form-logo">
                     </div>
+
                     <div id="kInlogDiv">
                         <button id="inlogKnop" name="submit">Inloggen</button>
                     </div>
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
 
-    </div>
+
 </body>
 
 </html>

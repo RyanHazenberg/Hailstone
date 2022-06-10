@@ -13,21 +13,15 @@
 
     <link rel="icon" type="image/x-icon" href="Media/Logo/favicon.ico">
     <title>Home | Hailstone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<<<<<<< HEAD
-=======
-  
->>>>>>> 09643b4ef0b7e5eabc057be9d8908a72114e82ff
 </head>
 
-<body>
+<body class="color1">
     <?php
     include_once ("Template_Header.php");
     ?>
     <div class="container">
         <div class="Title">
-            <h1 id="Title">About us<img src="Media/Logo/Hailstone-logo.png" alt="Hailstone Logo" id="About-Logo"></h1>
+            <h1 id="Title">About us</h1>
         </div>
         <div class="AboutText">
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum adipisci nulla quam blanditiis!
