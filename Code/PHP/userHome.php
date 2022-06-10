@@ -13,21 +13,26 @@
     ?>
 </head>
 
-<body>
+<body style="background-color: #262626">
 
     <?php
     include_once("header.php");
     ?>
     <div class="container">
-        <div class="row">
+        <div class="row mt-3 mb-3">
             <h1 id="h1">Welcome <?=$_SESSION["username"]?>!</h1>
         </div>
-        <div class="row">
+
+        <div class="row mt-5">
             <div class="col-6">
-                col1
+                <div class="card">
+                    col1
+                </div>
             </div>
             <div class="col-6">
-                col2
+                <div class="card">
+                    col2
+                </div>
             </div>
         </div>
     </div>
