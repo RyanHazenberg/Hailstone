@@ -42,7 +42,7 @@ header {
 }
 
 .Hbutton:focus {
-   background-color: #3ca6a6;
+   background-color: none;
 }
 
 .imgheader {
