@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <?php
+    include_once("header.php");
+    ?>
     <div class="container">
         <div class="Header"></div>
         <div class="Footer"></div>
