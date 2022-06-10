@@ -29,7 +29,6 @@
 
       ?>
       <a class="button Hbutton" href="<?=$url?>" role="button">Dashboard</a>
-      <a class="button Hbutton" href="#" role="button">About me</a>
     </div>
 
     <div id="header2">

@@ -19,8 +19,8 @@ if(isset($_POST['title'])){
     $UUID = guidv4(openssl_random_pseudo_bytes(16));
 
 
-
-    $query = "INSERT INTO vacature (vacUUID, vacatureTitel, vacatureOmschrijving)  VALUES (?, ?,?);";
+    $bedrijf = $_SESSION['name'];
+    $query = "INSERT INTO vacature (vacUUID, vacatureTitel, vacatureOmschrijving, bedrijf)  VALUES (?, ?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $query)){
 
@@ -29,27 +29,28 @@ if(isset($_POST['title'])){
         exit();
 
     }
-    mysqli_stmt_bind_param($stmt, "sss",$UUID, $titel, $beschrijving);
+    mysqli_stmt_bind_param($stmt, "ssss",$UUID, $titel, $beschrijving, $bedrijf);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
     
-    $query = "INSERT INTO vacatureRequirements (vacatureUUID, reqText)  VALUES (?, ?);";
-    $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt, $query)){
+    // $query = "INSERT INTO vacatureRequirements (vacatureUUID, reqText)  VALUES (?, ?);";
+    // $stmt = mysqli_stmt_init($conn);
+    // if(!mysqli_stmt_prepare($stmt, $query)){
 
-        $data[] = array('msg' => 'error','err' => 'error7');
-        echo json_encode($data);
-        exit();
+    //     $data[] = array('msg' => 'error','err' => 'error7');
+    //     echo json_encode($data);
+    //     exit();
 
-    }
-    mysqli_stmt_bind_param($stmt, "ss", $UUID, $req);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+    // }
+    // mysqli_stmt_bind_param($stmt, "ss", $UUID, $req);
+    // mysqli_stmt_execute($stmt);
+    // mysqli_stmt_close($stmt);
 
-
-
-    $data[] = array('msg' => 'succes','err' => 'geenErr', 'll' => "$titel");
-    echo json_encode($data);
+    header("location: ../bedrijfDashboard.php?error=succes");
     exit();
+
+    // $data[] = array('msg' => 'succes','err' => 'geenErr', 'll' => "$titel");
+    // echo json_encode($data);
+    // exit();
 }
