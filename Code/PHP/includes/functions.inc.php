@@ -147,6 +147,10 @@ if (mysqli_query($conn, $sql)) {
 
             $_SESSION["type"] = $usernameExists["type"];
 
+            if($_SESSION["type"] == 'company'){
+                header("location: ../bedrijfDashboard.php");
+                exit();
+            }
 
             header("location: ../userHome.php");
             exit();

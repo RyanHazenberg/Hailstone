@@ -28,22 +28,9 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col-6">
+            <div class="col-12">
                 <div class="card">
-                    col1
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="card">
-                    col2
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-<table class="table">
+                <table class="table">
     <thead>
         <tr>
         
@@ -90,6 +77,20 @@
 ?>
     </tbody>
 </table>
+                </div>
+            </div>
+            
+            <!-- <div class="col-6">
+                <div class="card">
+                    col2
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
 
 </body>
 

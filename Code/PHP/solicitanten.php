@@ -14,7 +14,9 @@
     ?>
 </head>
 <body style="padding:10px">
-    
+<?php
+    include_once("header.php");
+    ?>
 
     <h2>solicitanten : </h2>
     <table class="table">
@@ -52,6 +54,16 @@
         <td><?=$row['name']?></td>
         <td><?=$row['phone']?></td>
         <td><?=$row['email']?></td>
+        <td>
+            <form method="post" action="includes/aanneem.inc.php">
+
+            <input type="text" hidden name="naamSol" value="<?=$userID?>">
+
+            <button name="sendAan">Aannemen</button>
+
+        </form>
+    
+    </td>
 
     </tr>
 

@@ -14,7 +14,9 @@
     ?>
 </head>
 <body style="padding:10px">
-    
+<?php
+    include_once("header.php");
+    ?>
     <h1>maak een vacature</h1>
     <form id="makeVacature" method="post" action="api_backend/maakVac_Be.php">
         <input placeholder="Titel" name="title" id="title" type="text">
