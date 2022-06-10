@@ -5,6 +5,10 @@ body {
 
 #h1 {
     color: #3ca6a6;
+    animation: view 4s;
+}
+#late{
+    animation: view 6s;
 }
 
 .card{
@@ -19,4 +23,31 @@ body {
     gap:10px;
 }
 
-    
+@keyframes slide {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes view {
+    from {
+    opacity: 0%;
+    }
+
+    to {
+    opacity: 100%;
+    }
+}
+
+@keyframes slidey{
+    from{
+    transform:translateY(100%);
+    }
+    to{
+    transform: translateY(0%);
+    }
+}
