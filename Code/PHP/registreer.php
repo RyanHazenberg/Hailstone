@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up | Hailstone</title>
     <link rel="stylesheet" href="../CSS/Register.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -23,28 +24,22 @@
             <form method="post" autocomplete="off" action="includes/registreer.inc.php">
                 <div id="Container">
                     <h1>Sign-up</h1>
-                    <input type="text" name="name" placeholder="Fullname..." required id="Name">
-                    <input type="text" name="username" placeholder="Username..." required id="Username"><br>
-                    <input type="password" name="pwd" placeholder="Password..." required id="Password">
-                    <input type="password" name="pwdrepeat" placeholder="Repeat password..." required id="Repeat"><br>
-                    <input type="email" name="email" placeholder="Johndoe@example.com..." required id="Mail">
-                    <input type="number" name="phone" placeholder="+31 1234-56-78..." minlength="11" maxlength="15" required id="Phone">
-                    <input type="file" name="Profilepic" required id="Profilepic">
                     <div id="Freelance">
-                        <input type="radio" name="typeofuser" value="Freelancer" id="Freelancer">
+                        <button id="personRadio" name="typeofuser" value="Freelancer">
                         <label for="Freelancer">Freelancer</label>
                     </div>
                     <div id="Company">
-                        <input type="radio" name="typeofuser" value="Company">
+                        <button  id="companyRadio" name="typeofuser" value="Company">
                         <label for="Company">Company</label>
                     </div>
-                    <input type="text" name="Companyname" placeholder="Companyname..." id="CompanyName">
-                    <input type="text" name="Zip-code" placeholder="2837AB..." maxlength="6" id="Zip"><br>
-                    <input type="text" name="Adress" placeholder="1 Willow lane..." id="Adress">
-                    <input type="text" name="Province/state" placeholder="South-holland/Georgia..." id="Location">
-                    <input type="file" name="Companylogo" required id="Companylogo"><br>
+                    <div class="inputs">
+
+
+                    </div>
+                    
+
                     <button id="Register" name="submit" type="submit"><b>Register</b></button>
-                    <button id="Log-in" name="submit"><b>Login</b></button>
+                    <!-- <button id="Log-in" name="submit"><b>Login</b></button> -->
     
                 <p>already got an account? Log-in <a href="login.php">here!</a></p>
                 <img src="../../Media/Logo/Hailstone-Logo.png" alt="Hailstone-Logo" id="Form-logo">
@@ -77,5 +72,5 @@
     include_once ("Template_Header.php");
 ?> -->
 </body>
-
+<script src="js/signupForm.js"></script>
 </html>
